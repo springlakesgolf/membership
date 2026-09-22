@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Membership Inquiry | Spring Lakes Golf Club</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ground:#F4F5F2;
+  --surface:#FFFFFF;
+  --ink:#041E42;
+  --ink-soft:#59647C;
+  --line:rgba(4,30,66,.14);
+  --line-strong:rgba(4,30,66,.28);
+  --gold:#9F7D23;
+  --gold-ink:#8A6B1B;
+  --cta-ink:#FFFFFF;
+  --err:#B3261E;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#061223;
+    --surface:#0C1E38;
+    --ink:#E9EDF4;
+    --ink-soft:#9DABC2;
+    --line:rgba(212,175,85,.20);
+    --line-strong:rgba(212,175,85,.38);
+    --gold:#D4AF55;
+    --gold-ink:#E3C57A;
+    --cta-ink:#061223;
+    --err:#F2B8B5;
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#061223;
+  --surface:#0C1E38;
+  --ink:#E9EDF4;
+  --ink-soft:#9DABC2;
+  --line:rgba(212,175,85,.20);
+  --line-strong:rgba(212,175,85,.38);
+  --gold:#D4AF55;
+  --gold-ink:#E3C57A;
+  --cta-ink:#061223;
+  --err:#F2B8B5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;background:var(--ground);color:var(--ink);
+  font-family:Montserrat,"Helvetica Neue",Arial,sans-serif;font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:560px;margin:0 auto;padding-inline:16px}
+
+header{background:#041E42;color:#FFFFFF;text-align:center;padding-block:36px 32px}
+header img{width:84px;height:auto;display:block;margin:0 auto 14px}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#E3C57A;font-weight:600;margin:0}
+h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:clamp(34px,7vw,46px);line-height:1.05;margin:8px 0 0}
+.lede{color:rgba(255,255,255,.82);margin:12px auto 0;max-width:40ch}
+
+main{padding-block:28px 36px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:3px;padding:24px 22px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:600}
+label .opt{letter-spacing:.06em;text-transform:none;font-weight:500}
+input,select{
+  font:inherit;font-size:16px;color:var(--ink);background:var(--ground);
+  border:1px solid var(--line-strong);border-radius:2px;padding:10px 12px;width:100%;
+}
+select{appearance:none;-webkit-appearance:none;padding-right:34px;
+  background-image:linear-gradient(45deg,transparent 50%,var(--ink-soft) 50%),linear-gradient(135deg,var(--ink-soft) 50%,transparent 50%);
+  background-position:calc(100% - 17px) 55%,calc(100% - 12px) 55%;background-size:5px 5px;background-repeat:no-repeat}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.btn{
+  font-family:inherit;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  display:block;width:100%;padding:13px 16px;margin-top:6px;border-radius:2px;cursor:pointer;
+  background:var(--gold);color:var(--cta-ink);border:1px solid var(--gold);
+}
+.btn:hover{filter:brightness(1.08)}
+.btn[disabled]{opacity:.55;cursor:default}
+.err{font-size:13px;color:var(--err);margin:12px 0 0}
+.done{text-align:center;padding-block:10px}
+.done h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;font-size:30px;margin:0}
+.done p{color:var(--ink-soft);margin:10px 0 0}
+
+footer{text-align:center;font-size:12px;color:var(--ink-soft);padding-block:0 32px;line-height:1.8}
+footer a{color:var(--gold-ink)}
+
+@media (max-width:480px){
+  .two{grid-template-columns:1fr;gap:0}
+  .panel{padding:20px 16px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="data:image/png;base64,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" alt="Spring Lakes Golf Club heron">
+    <p class="eyebrow">Spring Lakes Golf Club</p>
+    <h1>Membership Inquiry</h1>
+    <p class="lede">Interested in joining? Leave your details and our team will be in touch with availability and pricing.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <form class="panel" id="form" novalidate>
+    <div id="live">
+      <div class="two">
+        <div class="field"><label for="name">Name</label><input id="name" type="text" autocomplete="name" maxlength="80"></div>
+        <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" inputmode="email" maxlength="120"></div>
+      </div>
+      <div class="field">
+        <label for="membership">Membership interested in</label>
+        <select id="membership">
+          <option value="">Choose one</option>
+          <option>Full Membership</option>
+          <option>Weekday</option>
+          <option>Pay as You Play</option>
+          <option>Junior Intermediate (ages 18 to 25)</option>
+          <option>Junior (ages 7 to 18)</option>
+          <option>Social Membership</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="year">Year looking to join</label>
+        <select id="year">
+          <option value="">Choose one</option>
+          <option>2026</option>
+          <option>2027</option>
+          <option>2028</option>
+          <option>2029 or later</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="referral">Member referral <span class="opt">(optional)</span></label>
+        <input id="referral" type="text" maxlength="80" placeholder="Member's name">
+      </div>
+      <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <button class="btn" type="submit" id="send">Send Inquiry</button>
+      <p class="err" id="err" hidden></p>
+    </div>
+    <div class="done" id="done" hidden>
+      <h2 id="thanks">Thank you</h2>
+      <p>We have your inquiry. Our team will be in touch soon.</p>
+    </div>
+  </form>
+</main>
+
+<footer>
+  Spring Lakes Golf Club &middot; 4962 Stouffville Road, Stouffville ON<br>
+  <a href="tel:9056403633">905-640-3633</a> &middot; <a href="https://springlakesgolf.com">springlakesgolf.com</a>
+</footer>
+
+<script>
+(function () {
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbztt-0KQKXHHbw0jHFwxzUqiNxbCPboNhR5qOKorbzOHpJEfpjUCQMus26GyOLJExzv/exec";
+  var $ = function (id) { return document.getElementById(id); };
+  var err = $("err"), send = $("send");
+  var okEmail = function (v) { return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); };
+
+  function fail(msg, el) {
+    err.textContent = msg; err.hidden = false;
+    send.disabled = false; send.textContent = "Send Inquiry";
+    if (el) { el.focus(); }
+  }
+
+  $("form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    err.hidden = true;
+    var p = {
+      name: $("name").value.trim(),
+      email: $("email").value.trim(),
+      membership: $("membership").value,
+      year: $("year").value,
+      referral: $("referral").value.trim(),
+      website: $("website").value
+    };
+    if (!p.name) { return fail("Please add your name.", $("name")); }
+    if (!okEmail(p.email)) { return fail("Please add a valid email address.", $("email")); }
+    if (!p.membership) { return fail("Please choose the membership you are interested in.", $("membership")); }
+    if (!p.year) { return fail("Please choose the year you are looking to join.", $("year")); }
+
+    send.disabled = true; send.textContent = "Sending\u2026";
+    fetch(ENDPOINT, { method: "POST", body: JSON.stringify(p) })
+      .then(function (r) { return r.json(); })
+      .then(function (res) {
+        if (!res || !res.ok) { return fail((res && res.message) || "That did not go through. Please call us at 905-640-3633."); }
+        $("thanks").textContent = "Thank you, " + p.name.split(" ")[0];
+        $("live").hidden = true; $("done").hidden = false;
+      })
+      .catch(function () { fail("That did not go through. Please call us at 905-640-3633."); });
+  });
+})();
+</script>
+</body>
+</html>
